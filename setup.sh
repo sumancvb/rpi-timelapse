@@ -23,6 +23,7 @@ WantedBy=multi-user.target
 EOF
 
 cat > /home/pi/timelapse.sh <<'EOF'
+#!/bin/bash
 raspistill -t 43200000 -tl 20000 -o /media/pi/NOX/image%06d.jpg
 EOF
 
